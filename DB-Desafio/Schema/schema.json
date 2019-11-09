@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "shopping_cart": {
+      "type": "integer"
+    },
+    "sku": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "additionalItems": false
+    },
+    "color": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "additionalItems": false
+    },
+    "size": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "additionalItems": false
+    },
+    "price": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "additionalItems": false
+    },
+    "total_shipping": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "shopping_cart",
+    "sku",
+    "color",
+    "size",
+    "price",
+    "total_shipping"
+  ]
+}
